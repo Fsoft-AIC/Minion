@@ -1,0 +1,1 @@
+python train_fewrel_final.py --task_name FewRel --num_k 5 --num_gen 0 >> fewrel_llm2vec_mistral.txt

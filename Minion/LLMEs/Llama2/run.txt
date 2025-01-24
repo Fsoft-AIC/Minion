@@ -1,0 +1,2 @@
+python train_tacred_final.py --task_name Tacred --num_k 5 --num_gen 0 > tacred_llm2vec_llama2.txt 2> error_llama3_tacred.log
+python train_fewrel_final.py --task_name FewRel --num_k 5 --num_gen 0 > fewrel_llm2vec_llama2.txt 2> error_llama3_fewrel.log
