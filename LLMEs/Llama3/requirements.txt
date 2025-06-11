@@ -3,3 +3,4 @@ torch==2.3.0
 scikit-learn ==1.4.2
 llm2vec==0.2.2
 flash-attn --no-build-isolation
+pytorch-metric-learning

@@ -17,3 +17,4 @@ scipy==1.10.0
 texttable==1.6.4
 torch==2.2.0
 tqdm==4.66.3
+pytorch-metric-learning
