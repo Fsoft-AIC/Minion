@@ -1,9 +1,10 @@
+<h1 align="left">
+  MINION
+  <img src="https://raw.githubusercontent.com/pdt0609/Minion/main/png/minion.jpg" width="100" align="right">
+</h1>
 
-# MINION
-
-This is the official implementation of paper: 
-- Mitigating Non-Representative Prototypes and Representation Bias in Few-Shot Continual Relation Extraction
-
+This is the official implementation of the paper:  
+- **Mitigating Non-Representative Prototypes and Representation Bias in Few-Shot Continual Relation Extraction**
 
 ## 🚀 Updates
 - \[2025\05\16] Our paper has been accepted to ACL 2025 Main Conference!
