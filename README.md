@@ -1,10 +1,22 @@
-The result of CPL using llama2 and mistral are running under float32 for fair comparrision with 
+
+# MINION
+
+This is the official implementation of paper: 
+- Mitigating Non-Representative Prototypes and Representation Bias in Few-Shot Continual Relation Extraction
+
+
+## 🚀 Updates
+- \[2025\05\16] Our paper has been accepted to ACL 2025 Main Conference!
+
+## 📊 MINION Framework Visualization
+
+![MINION Model Structure](https://raw.githubusercontent.com/pdt0609/Minion/main/png/model_structure.jpg)
+
+
 
 
 ---
-!pip install transformers==4.40.0 torch==2.3.0 scikit-learn ==1.4.2 nltk==3.8.1 retry==0.9.2
 
-!pip install pytorch_metric_learning
 
 
 ## BERT
@@ -14,11 +26,18 @@ The result of CPL using llama2 and mistral are running under float32 for fair co
    ```
    cd Bert
    ```
-2. Run the TACRED training:
+
+2. Install necessary packages:
+   ```
+   !pip install transformers==4.40.0 torch==2.3.0 scikit-learn ==1.4.2 nltk==3.8.1 retry==0.9.2
+   !pip install flash-attn --no-build-isolation
+   !pip install pytorch_metric_learning
+   ```
+3. Run the TACRED training:
    ```
    python train_tacred_final.py --task_name Tacred --num_k 5 
    ```
-3. Run the FewRel training:
+4. Run the FewRel training:
    ```
    python train_fewrel_final.py --task_name FewRel --num_k 5 
    ```
@@ -35,6 +54,7 @@ The result of CPL using llama2 and mistral are running under float32 for fair co
    !pip install transformers==4.40.0 torch==2.3.0 scikit-learn ==1.4.2 nltk==3.8.1 retry==0.9.2
    !pip install llm2vec==0.2.2
    !pip install flash-attn --no-build-isolation
+   !pip install pytorch_metric_learning
    ```
 3. Log in to Hugging Face:
    ```
@@ -51,7 +71,11 @@ The result of CPL using llama2 and mistral are running under float32 for fair co
    ```
    python train_fewrel_final.py --task_name FewRel --num_k 5 
    ```
-The result of CPL using llama2 and mistral are running under float32 for fair comparrision with https://arxiv.org/abs/2410.00334. All of the others setting are run under bf16.
-For running CPL model put your openai key into config.ini
-Requires: Python >=3.8
+
+### Notes
+
+- CPL results with **Llama2** and **Mistral** are evaluated under `float32` for fair comparison with [Quyen et al](https://arxiv.org/abs/2410.00334).
+- All other experiments use `bf16`.
+- Requires **Python ≥3.8**.
+- For CPL, add your OpenAI API key to `config.ini`.
 --- 
