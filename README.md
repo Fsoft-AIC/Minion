@@ -1,6 +1,5 @@
 <h1 align="left">
   MINION
-  <img src="https://raw.githubusercontent.com/pdt0609/Minion/main/png/minion.jpg" width="100" align="right">
 </h1>
 
 This is the official implementation of the paper:  
